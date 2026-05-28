@@ -26,7 +26,11 @@ def run_tracking(
     ...
     """
 
-    tracker = DeepSort(max_age=30, n_init=20)
+    tracker = DeepSort(
+        max_age=30,
+        n_init=20,
+        nms_max_overlap=0.6
+    )
     yolo_model = model.get_model()
 
     cap = cv2.VideoCapture(input_path)
