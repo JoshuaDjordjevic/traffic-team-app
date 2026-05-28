@@ -1,0 +1,269 @@
+body {
+  background: #f4f6fb;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  color: #111827;
+}
+
+.main-wrapper {
+  padding: 50px 20px;
+}
+
+.upload-card {
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  font-size: 1.05rem;
+}
+
+.drop-zone {
+  border: 2px dashed #cbd5e1;
+  border-radius: 20px;
+  background: #f8fafc;
+  padding: 70px 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.drop-zone:hover {
+  border-color: #4361ee;
+  background: #f5f7ff;
+}
+
+.upload-icon {
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-size: 2rem;
+  color: #4361ee;
+  margin-bottom: 25px;
+}
+
+.drop-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.drop-subtitle {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.btn-primary-custom {
+  color: white;
+  background: linear-gradient(135deg, #4361ee, #3a0ca3);
+  border: none;
+  padding: 14px 34px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.info-row {
+  margin-top: 25px;
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  background: rgba(67, 97, 238, 0.1);
+  color: #4361ee;
+}
+
+.info-title {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.info-text {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.action-row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.reset-btn {
+  background: white;
+  border: 1px solid #dbe1ea;
+  border-radius: 14px;
+  padding: 14px 28px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.progress-card,
+.results-card {
+  margin-top: 35px;
+  border: 1px solid #eef2f7;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.progress-title,
+.results-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 16px;
+  border-radius: 999px;
+  background: #e9edf5;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: linear-gradient(135deg, #4361ee, #3a0ca3);
+  width: 0%;
+  transition: width 0.4s;
+}
+
+.progress-footer {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.results-card {
+  display: none;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 350px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e3a8a;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  border: 2px dashed #93c5fd;
+}
+
+.stat-card {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+  height: 100%;
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  margin: auto auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(67, 97, 238, 0.1);
+  color: #4361ee;
+  font-size: 1.4rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #0f172a;
+}
+
+.stat-label {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.congestion-light {
+  color: #16a34a;
+}
+
+.congestion-medium {
+  color: #f59e0b;
+}
+
+.congestion-heavy {
+  color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .upload-card {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .drop-title {
+    font-size: 1.4rem;
+  }
+
+  .action-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .action-row button {
+    width: 100%;
+  }
+
+  .video-placeholder {
+    height: 220px;
+    font-size: 1rem;
+  }
+}

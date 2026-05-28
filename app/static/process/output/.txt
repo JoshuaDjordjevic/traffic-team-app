@@ -1,0 +1,1 @@
+Taffic videos processed by the server will be stored in this folder.

@@ -1,0 +1,5 @@
+.venv
+*.pyc
+
+app/static/process/upload/*.mp4
+app/static/process/output/*.mp4
