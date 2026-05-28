@@ -32,6 +32,16 @@ function updateDropUI(file) {
   title.textContent = `Selected: ${file.name}`;
 }
 
+videoInput.addEventListener("change", (e) => {
+  const file = e.target.files[0];
+
+  if (!file) return;
+
+  updateDropUI(file);
+
+  console.log("File selected via picker:", file.name);
+});
+
 // Upload and process video button
 
 processBtn.onclick = async () => {
@@ -88,7 +98,7 @@ async function trackProgress(jobId) {
       clearInterval(interval);
       await retrieveResult(jobId);
     }
-  }, 1000);
+  }, 500);
 }
 
 const congestionLabels = {

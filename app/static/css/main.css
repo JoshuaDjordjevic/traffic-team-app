@@ -93,6 +93,22 @@ body {
   opacity: 0.95;
 }
 
+.btn-secondary-custom {
+  color: white;
+  background: linear-gradient(135deg, #962a2a, #5f0707);
+  border: none;
+  padding: 14px 34px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn-secondary-custom:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
 .info-row {
   margin-top: 25px;
   background: #f8fafc;
@@ -138,12 +154,9 @@ body {
 }
 
 .reset-btn {
-  background: white;
-  border: 1px solid #dbe1ea;
   border-radius: 14px;
   padding: 14px 28px;
   font-weight: 600;
-  color: #334155;
 }
 
 .progress-card,
@@ -171,7 +184,7 @@ body {
 .progress-bar {
   background: linear-gradient(135deg, #4361ee, #3a0ca3);
   width: 0%;
-  transition: width 0.4s;
+  transition: width 0.75s;
 }
 
 .progress-footer {
