@@ -111,6 +111,6 @@ def run_tracking(
     # Return the result
     return TrackerProcessResult(
         total_cars=total_cars,
-        cars_per_min=cars_per_min,
+        cars_per_min=round(cars_per_min, 1),
         congestion_rating=get_congestion(cars_per_min)
     )
